@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+	<!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>"> -->
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -26,22 +26,20 @@
                 some of my works.
               </p>
               <p style="text-align:center">
-                <a href="mailto:jonbarron@gmail.com">Email</a> &nbsp/&nbsp
-                <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp
-                <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Google Scholar</a> &nbsp/&nbsp
+                <a href="data/cv_yuncong.pdf">CV</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?hl=en&user=IgQuUY0AAAAJ">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://twitter.com/yyupsong">Twitter</a> &nbsp/&nbsp
                 <a href="https://github.com/yyuncong/">Github</a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/JonBarron.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/JonBarron_circle.jpg" class="hoverZoomLink"></a>
+              <a href="images/yuncong.jpeg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/yuncong_circle.png" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
+            <td style="padding:10px;width:30%;vertical-align:middle">
               <heading>Research</heading>
               <p>
                 I'm interested in a lot things.
@@ -50,19 +48,132 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <td style="padding:10px;width:30%;vertical-align:middle;display:table-cell">
+            <div class="one">
+              <img src='images/tempclr.png' width="240" height="135">
+            </div>
+          </td>
+          <td style="padding:10px;width:70%;vertical-align:middle;display:table-cell">
+            <a href="https://openreview.net/forum?id=CIFOsnhZvON">
+              <papertitle>TempCLR: Temporal Alignment Representation with Contrastive Learning
+              </papertitle>
+            </a>
+            <br>
+            <strong>Yuncong Yang*</strong>,
+            <a href="https://blogs.cuit.columbia.edu/jm4743/">Jiawei Ma*</a>,
+            <a href="https://shiyuanh.github.io/">Shiyuan Huang</a>,
+            <a href="https://zjuchenlong.github.io/">Long Chen</a>,
+            <a href="https://xudonglinthu.github.io/">Xudong Lin</a>,
+            <a href="https://guangxinghan.github.io/">Guangxing Han</a>,
+            <a href="https://www.ee.columbia.edu/~sfchang/">Shih-Fu Chang</a>
+            <br>
+              <em>under review</em>, 2022
+            <br>
+            <a href="https://openreview.net/forum?id=CIFOsnhZvON">paper (under review)</a>
+            /
+            code comming soon
+            <p></p>
+            <p>
+              We proposed TempCLR, a new contrastive learning framework that considers sequence-level temporal order consistency. The sequence-level framework improves multimodal representation learning in video understanding.
+            </p>
+          </td>
+
+          <tr onmouseout="minedojo_stop()" onmouseover="minedojo_start()">
+            <td style="padding:10px;width:30%;vertical-align:middle;display:table-cell">
+              <div class="one">
+                <div class="two" id='minedojo_image'><video width="240" height="135" muted autoplay loop>
+                <source src="images/minedojo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/minedojo.jpg' width="240" height="135">
+              </div>
+              <script type="text/javascript">
+                function minedojo_start() {
+                  document.getElementById('minedojo_image').style.opacity = "1";
+                }
+
+                function minedojo_stop() {
+                  document.getElementById('minedojo_image').style.opacity = "0";
+                }
+                minedojo_stop()
+              </script>
+            </td>
+            <td style="padding:10px;width:70%;vertical-align:middle;display:table-cell">
+              <a href="https://minedojo.org/">
+                <papertitle>MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge
+                </papertitle>
+              </a>
+              <br>
+              <a href="https://jimfan.me/">Linxi Fan</a>,
+              <a href="https://guanzhi.me/">Guanzhi Wang*</a>,
+              <a href="https://yunfanj.com/">Yunfan Jiang*</a>,
+              <a href="https://research.nvidia.com/person/ajay-mandlekar">Ajay Mandlekar</a>,
+              <strong>Yuncong Yang</strong>,
+							<a href="https://bmild.github.io/">Haoyi Zhu</a>,
+              <a href="https://twitter.com/andrewtang01">Andrew Tang</a>,
+              <a href="https://ai.stanford.edu/~dahuang/">De-An Huang</a>,
+              <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>,
+              <a href="http://tensorlab.cms.caltech.edu/users/anima/">Animashree Anandkumar</a>
+              <br>
+              <em>NeurIPS</em> 2022, Datasets and Benchmarks Track &nbsp <font color="red"><strong>(Outstanding Paper Award, Featured Paper Presentation)</strong></font>
+              <br>
+              <a href="https://minedojo.org/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2206.08853">paper</a>
+              /
+              <a href="https://github.com/MineDojo/MineDojo">code</a>
+              <p></p>
+              <p>
+                We introduce MineDojo, a new framework based on the popular Minecraft game for building generally capable, open-ended embodied agents.
+              </p>
+            </td>
+          </tr>
 					
-					
+          <td style="padding:10px;width:30%;vertical-align:middle;display:table-cell">
+            <div class="one">
+              <img src='images/fewshot.png' width="240" height="135">
+            </div>
+          </td>
+          <td style="padding:10px;width:70%;vertical-align:middle;display:table-cell">
+            <a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136860056.pdf">
+              <papertitle>Few-Shot End-to-End Object Detection via Constantly Concentrated Encoding across Heads
+              </papertitle>
+            </a>
+            <br>
+            <a href="https://blogs.cuit.columbia.edu/jm4743/">Jiawei Ma</a>,
+            <a href="https://guangxinghan.github.io/">Guangxing Han</a>,
+            <a href="https://shiyuanh.github.io/">Shiyuan Huang</a>,
+            <strong>Yuncong Yang</strong>,
+            <a href="https://www.ee.columbia.edu/~sfchang/">Shih-Fu Chang</a>
+            <br>
+              <em>ECCV</em> 2022
+            <br>
+            <a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136860056.pdf">paper</a>
+            /
+            code comming soon
+            <p></p>
+            <p>
+            </p>
+          </td>
         </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+          <td style="padding:10px;width:30%;vertical-align:middle">
+            <heading>Teaching</heading>
+          </td>
+        </tr>
+      </tbody></table>
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <td style="padding:10px;width:100%;vertical-align:middle;display:table-cell">
+            Teaching Assistant: COMS 4732 Computer Vision (Spring 2022)
+        </td>
+      </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-                Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>,
-                just add a link back to my website.
-                <strong>Do not</strong> scrape the HTML from the deployed instance of this website at http://jonbarron.info,
-                as it includes analytics tags that you do not want on your own website &mdash; use the github code instead.
-                If you'd like your new page linked to from here, submit a pull request adding yourself.
+                Thanks for the template from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>!
               </p>
             </td>
           </tr>
