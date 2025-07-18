@@ -105,10 +105,21 @@ name {
   font-size: 32px;
 }
 
+.video-cell {
+  vertical-align: middle;
+  display: table-cell;
+}
+
 .one {
   width: 160px;
   height: 160px;
+  min-height: 100%;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .two {
@@ -128,4 +139,9 @@ name {
 
 span.highlight {
   background-color: #ffffd0;
+}
+
+.research-video {
+  height: 135px;
+  display: block;
 }
