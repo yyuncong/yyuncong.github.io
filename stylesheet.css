@@ -105,6 +105,47 @@ name {
   font-size: 32px;
 }
 
+.profile-photo {
+  width: 85%;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.news-list {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  padding-left: 22px;
+}
+
+.news-list li {
+  margin-bottom: 5px;
+}
+
+.older-news {
+  margin: 2px 0 0 22px;
+}
+
+.older-news summary {
+  width: max-content;
+  color: #1772d0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.older-news summary:hover,
+.older-news summary:focus {
+  color: #f09228;
+}
+
+.older-news .news-list {
+  margin-top: 8px;
+}
+
 .video-cell {
   vertical-align: middle;
   display: table-cell;
@@ -120,21 +161,6 @@ name {
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
-}
-
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
 }
 
 span.highlight {
