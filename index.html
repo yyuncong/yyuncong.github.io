@@ -26,6 +26,9 @@
               <p>
                 My research interests lie in the area of Spatial Intelligence, Embodied AI, and Multi-modal Foundation Models.
               </p>
+              <p class="internship-note">
+                I am actively looking for Summer 2027 internship opportunities.
+              </p>
               <p style="text-align:center">
                 <a href="data/cv_yuncong.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?hl=en&user=IgQuUY0AAAAJ">Google Scholar</a> &nbsp/&nbsp
@@ -43,7 +46,7 @@
           <td style="padding:10px;width:100%;vertical-align:middle">
             <heading>News</heading>
             <ul class="news-list">
-              <li>[2026.09] <a href="https://umass-embodied-agi.github.io/SyncWorld/">SyncWorld</a> is released!</li>
+              <li>[2026.09] Two papers have been accepted to <a href="https://neurips.cc/Conferences/2026">NeurIPS 2026</a>, with <a href="https://umass-embodied-agi.github.io/SyncWorld/">SyncWorld</a> selected for an <strong>Oral presentation</strong>!</li>
               <li>[2026.06] I started my research internship at Meta MSL.</li>
               <li>[2025.09] <a href="https://umass-embodied-agi.github.io/MindJourney/">MindJourney</a> is accepted by <a href="https://neurips.cc/Conferences/2025">NeurIPS 2025</a>!</li>
             </ul>
@@ -66,17 +69,23 @@
       </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-            <td style="padding:10px;width:30%;vertical-align:middle">
-              <heading>Research</heading>
-              <p>
-              (* indicates equal contribution)
-              </p>
+            <td style="padding:10px;width:100%;vertical-align:middle">
+              <div class="research-header">
+                <div>
+                  <heading>Research</heading>
+                  <p>(* indicates equal contribution)</p>
+                </div>
+                <div class="publication-filter" role="group" aria-label="Choose which publications to show">
+                  <button type="button" class="publication-filter-button is-active" data-publication-filter="selected" aria-pressed="true" aria-controls="publication-list">Selected</button>
+                  <button type="button" class="publication-filter-button" data-publication-filter="all" aria-pressed="false" aria-controls="publication-list">Full list</button>
+                </div>
+              </div>
             </td>
           </tr>
         </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table id="publication-list" class="publications" data-view="selected" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
-          <tr>
+          <tr class="publication-row publication-selected">
             <td style="padding:10px;width:30%;" class="video-cell">
               <div class="one">
                 <video class="research-video" muted autoplay loop playsinline>
@@ -100,7 +109,7 @@
               <a href="https://yilundu.github.io/">Yilun Du</a>,
               <a href="https://people.csail.mit.edu/ganchuang/">Chuang Gan</a>
               <br>
-              <em>arXiv, 2026</em>
+              <em>NeurIPS 2026</em> &nbsp; <span class="paper-honor"><strong>(Oral)</strong></span>
               <br>
               <a href="https://umass-embodied-agi.github.io/SyncWorld/">project page</a>
               /
@@ -115,7 +124,71 @@
               </p>
             </td>
           </tr>
-          <tr>
+          <tr class="publication-row publication-selected">
+            <td style="padding:10px;width:30%;vertical-align:middle">
+              <img class="research-image" src="images/action_images.png" alt="Action Images multiview video generation teaser">
+            </td>
+            <td style="padding:10px;width:70%;vertical-align:middle">
+              <a href="https://actionimages.github.io/">
+                <papertitle>Action Images: End-to-End Policy Learning via Multiview Video Generation</papertitle>
+              </a>
+              <br>
+              <a href="https://haoyuzhen.com/">Haoyu Zhen</a>,
+              <a href="https://zixiangao.github.io/">Zixian Gao</a>,
+              <a href="https://qiaosun22.github.io/">Qiao Sun</a>,
+              <a href="https://ermu2001.github.io/me.io/">Yilin Zhao</a>,
+              <strong>Yuncong Yang</strong>,
+              <a href="https://yilundu.github.io/">Yilun Du</a>,
+              <a href="https://psguo.github.io/">Pengsheng Guo</a>,
+              <a href="https://zswang666.github.io/">Tsun-Hsuan Wang</a>,
+              <a href="https://ylqiao.net/">Yi-Ling Qiao</a>,
+              <a href="https://people.csail.mit.edu/ganchuang/">Chuang Gan</a>
+              <br>
+              <em>NeurIPS 2026</em>
+              <br>
+              <a href="https://actionimages.github.io/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2604.06168">paper</a>
+              /
+              <a href="https://github.com/UMass-Embodied-AGI/ActionImages">code</a>
+              <p></p>
+              <p>
+                We introduce Action Images, an end-to-end framework that learns robot policies through multiview video generation.
+              </p>
+            </td>
+          </tr>
+          <tr class="publication-row">
+            <td style="padding:10px;width:30%;vertical-align:middle">
+              <img class="research-image" src="images/fast_spatial_memory.png" alt="Fast Spatial Memory model overview">
+            </td>
+            <td style="padding:10px;width:70%;vertical-align:middle">
+              <a href="https://fast-spatial-memory.github.io/">
+                <papertitle>Fast Spatial Memory with Elastic Test-Time Training</papertitle>
+              </a>
+              <br>
+              <a href="https://mars-tin.github.io/">Ziqiao Ma</a>,
+              <a href="https://unicorn53547.github.io/">Xueyang Yu</a>,
+              <a href="https://haoyuzhen.com/">Haoyu Zhen</a>,
+              <strong>Yuncong Yang</strong>,
+              <a href="https://web.eecs.umich.edu/~chaijy/">Joyce Chai</a>,
+              <a href="https://people.csail.mit.edu/ganchuang/">Chuang Gan</a>
+              <br>
+              <em>ECCV 2026</em>
+              <br>
+              <a href="https://fast-spatial-memory.github.io/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2604.07350">paper</a>
+              /
+              <a href="https://github.com/Mars-tin/fast-spatial-mem">code</a>
+              /
+              <a href="https://mars-tin.github.io/blogs/posts/elastic_ttt.html">blog</a>
+              <p></p>
+              <p>
+                We introduce an elastic test-time training approach for fast, adaptive spatial memory in embodied agents.
+              </p>
+            </td>
+          </tr>
+          <tr class="publication-row publication-selected">
             <td style="padding:10px;width:30%;" class="video-cell">
               <div class="one">
                 <video class="research-video" muted autoplay loop>
@@ -152,7 +225,7 @@
               </p>
             </td>
           </tr>
-          <tr>
+          <tr class="publication-row">
             <td style="padding:10px;width:30%;max-width:30%;vertical-align:middle">
               <img src='images/persistent_world_model.png' width="240" height="135">
             </td>
@@ -178,7 +251,7 @@
               <p></p>
             </td>
           </tr>
-          <tr>
+          <tr class="publication-row publication-selected">
             <td style="padding:10px;width:30%;" class="video-cell">
               <div class="one">
                 <video class="research-video" muted autoplay loop>
@@ -217,7 +290,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr class="publication-row">
             <td style="padding:10px;width:30%;vertical-align:middle">
               <img src='images/tempclr.png' height="135">
             </td>
@@ -247,7 +320,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr class="publication-row publication-selected">
             <td style="padding:10px;width:30%;vertical-align:middle">
               <div class="one">
                 <video class="research-video" muted autoplay loop playsinline>
@@ -287,7 +360,7 @@
             </td>
           </tr>
 
-					<tr>
+						<tr class="publication-row">
             <td style="padding:10px;width:30%;max-width:30%;vertical-align:middle">
               <img src='images/fewshot.png' width="240" height="135">
             </td>
@@ -348,6 +421,23 @@
       </td>
     </tr>
   </table>
+  <script>
+    const publicationList = document.getElementById('publication-list');
+    const publicationFilterButtons = document.querySelectorAll('[data-publication-filter]');
+
+    publicationFilterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const view = button.dataset.publicationFilter;
+        publicationList.dataset.view = view;
+
+        publicationFilterButtons.forEach((filterButton) => {
+          const isActive = filterButton === button;
+          filterButton.classList.toggle('is-active', isActive);
+          filterButton.setAttribute('aria-pressed', String(isActive));
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>

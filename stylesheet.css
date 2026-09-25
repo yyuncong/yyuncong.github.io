@@ -126,6 +126,11 @@ name {
   margin-bottom: 5px;
 }
 
+.internship-note {
+  font-weight: 700;
+  color: #8c1d40;
+}
+
 .older-news {
   margin: 2px 0 0 22px;
 }
@@ -170,4 +175,74 @@ span.highlight {
 .research-video {
   height: 135px;
   display: block;
+}
+
+.research-image {
+  width: 240px;
+  height: 135px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.research-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.research-header p {
+  margin-bottom: 0;
+}
+
+.publication-filter {
+  display: inline-flex;
+  padding: 3px;
+  border: 1px solid #d7dce2;
+  border-radius: 7px;
+  background: #f5f7f9;
+}
+
+.publication-filter-button {
+  padding: 6px 12px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: #4a5560;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.publication-filter-button:hover,
+.publication-filter-button:focus-visible {
+  color: #1772d0;
+}
+
+.publication-filter-button.is-active {
+  background: #1772d0;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.14);
+}
+
+.publications[data-view="selected"] .publication-row:not(.publication-selected) {
+  display: none;
+}
+
+.paper-honor {
+  color: #d00000;
+}
+
+@media (max-width: 600px) {
+  .research-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .publication-filter-button {
+    padding: 7px 13px;
+  }
 }
