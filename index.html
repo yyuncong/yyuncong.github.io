@@ -10,13 +10,13 @@
 </head>
 
 <body>
-  <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <table class="page-shell" style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
+        <table class="intro-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr class="intro-row" style="padding:0px">
+            <td class="intro-copy" style="padding:2.5%;width:63%;vertical-align:middle">
+              <p class="profile-name" style="text-align:center">
                 <name>Yuncong Yang</name>
               </p>
               <p>I am currently a third-year PhD student at UMass Amherst, where I am supervised by Prof. <a href="https://people.csail.mit.edu/ganchuang/">Chuang Gan</a> and collaborate with Prof. <a href="https://yilundu.github.io/">Yilun Du</a>. Since June 2026, I have been a research intern at Meta MSL.
@@ -29,14 +29,14 @@
               <p class="internship-note">
                 I am actively looking for Summer 2027 internship opportunities.
               </p>
-              <p style="text-align:center">
+              <p class="profile-links" style="text-align:center">
                 <a href="data/cv_yuncong.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?hl=en&user=IgQuUY0AAAAJ">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://x.com/YuncongYY">Twitter</a> &nbsp/&nbsp
                 <a href="https://github.com/yyuncong/">Github</a>
               </p>
             </td>
-            <td style="padding:2.5%;width:45%;max-width:45%">
+            <td class="intro-photo" style="padding:2.5%;width:45%;max-width:45%">
               <a href="images/portrait_2026.jpg"><img alt="Yuncong Yang" src="images/portrait_2026.jpg" class="profile-photo"></a>
             </td>
           </tr>
@@ -88,7 +88,7 @@
           <tr class="publication-row publication-selected">
             <td style="padding:10px;width:30%;" class="video-cell">
               <div class="one">
-                <video class="research-video" muted autoplay loop playsinline>
+                <video class="research-video" muted autoplay loop playsinline preload="metadata">
                   <source src="images/syncworld_demo.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
@@ -126,7 +126,7 @@
           </tr>
           <tr class="publication-row publication-selected">
             <td style="padding:10px;width:30%;vertical-align:middle">
-              <img class="research-image" src="images/action_images.png" alt="Action Images multiview video generation teaser">
+              <img class="research-image" src="images/action_images.png" alt="Action Images multiview video generation teaser" loading="lazy">
             </td>
             <td style="padding:10px;width:70%;vertical-align:middle">
               <a href="https://actionimages.github.io/">
@@ -159,7 +159,7 @@
           </tr>
           <tr class="publication-row">
             <td style="padding:10px;width:30%;vertical-align:middle">
-              <img class="research-image" src="images/fast_spatial_memory.png" alt="Fast Spatial Memory model overview">
+              <img class="research-image" src="images/fast_spatial_memory.png" alt="Fast Spatial Memory model overview" loading="lazy">
             </td>
             <td style="padding:10px;width:70%;vertical-align:middle">
               <a href="https://fast-spatial-memory.github.io/">
@@ -191,7 +191,7 @@
           <tr class="publication-row publication-selected">
             <td style="padding:10px;width:30%;" class="video-cell">
               <div class="one">
-                <video class="research-video" muted autoplay loop>
+                <video class="research-video" muted autoplay loop playsinline preload="metadata">
                 <source src="images/mindjourney_opening_video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video>
@@ -227,7 +227,7 @@
           </tr>
           <tr class="publication-row">
             <td style="padding:10px;width:30%;max-width:30%;vertical-align:middle">
-              <img src='images/persistent_world_model.png' width="240" height="135">
+              <img class="research-image" src="images/persistent_world_model.png" alt="Persistent embodied world model overview" loading="lazy">
             </td>
             <td style="padding:10px;width:70%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2505.05495">
@@ -254,7 +254,7 @@
           <tr class="publication-row publication-selected">
             <td style="padding:10px;width:30%;" class="video-cell">
               <div class="one">
-                <video class="research-video" muted autoplay loop>
+                <video class="research-video" muted autoplay loop playsinline preload="metadata">
                 <source src="images/3dmem_video_intro.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video>
@@ -292,7 +292,7 @@
 
           <tr class="publication-row">
             <td style="padding:10px;width:30%;vertical-align:middle">
-              <img src='images/tempclr.png' height="135">
+              <img class="research-image" src="images/tempclr.png" alt="TempCLR method overview" loading="lazy">
             </td>
             <td style="padding:10px;width:70%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2212.13738">
@@ -323,7 +323,7 @@
           <tr class="publication-row publication-selected">
             <td style="padding:10px;width:30%;vertical-align:middle">
               <div class="one">
-                <video class="research-video" muted autoplay loop playsinline>
+                <video class="research-video" muted autoplay loop playsinline preload="metadata">
                   <source src="images/minedojo.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
@@ -362,7 +362,7 @@
 
 						<tr class="publication-row">
             <td style="padding:10px;width:30%;max-width:30%;vertical-align:middle">
-              <img src='images/fewshot.png' width="240" height="135">
+              <img class="research-image" src="images/fewshot.png" alt="Few-shot object detection method overview" loading="lazy">
             </td>
             <td style="padding:10px;width:70%;max-width:70%;vertical-align:middle">
               <a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136860056.pdf">
@@ -437,6 +437,22 @@
         });
       });
     });
+
+    const researchVideos = document.querySelectorAll('.research-video');
+
+    if ('IntersectionObserver' in window) {
+      const videoObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.play().catch(() => {});
+          } else {
+            entry.target.pause();
+          }
+        });
+      }, { rootMargin: '120px 0px', threshold: 0.15 });
+
+      researchVideos.forEach((video) => videoObserver.observe(video));
+    }
   </script>
 </body>
 

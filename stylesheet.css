@@ -68,6 +68,25 @@ a {
   text-decoration: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  color: #222222;
+  line-height: 1.45;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
 a:focus,
 a:hover {
   color: #f09228;
@@ -236,13 +255,135 @@ span.highlight {
 }
 
 @media (max-width: 600px) {
+  body {
+    padding: 0 12px;
+  }
+
+  .page-shell {
+    width: 100% !important;
+  }
+
+  .intro-table,
+  .intro-table > tbody,
+  .intro-copy,
+  .intro-photo {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .intro-row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .intro-copy {
+    padding: 8px 4px 4px !important;
+  }
+
+  .intro-photo {
+    padding: 24px 4px 4px !important;
+  }
+
+  .profile-photo {
+    width: min(58vw, 210px);
+  }
+
+  name {
+    font-size: 28px;
+  }
+
+  .profile-links {
+    line-height: 2;
+  }
+
+  .news-list {
+    padding-left: 20px;
+  }
+
+  .older-news {
+    margin-left: 0;
+  }
+
   .research-header {
     align-items: flex-start;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
+  }
+
+  .publication-filter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
   }
 
   .publication-filter-button {
-    padding: 7px 13px;
+    min-height: 44px;
+    padding: 8px 13px;
+    font-size: 14px;
+  }
+
+  .publications,
+  .publications > tbody {
+    display: block;
+    width: 100%;
+  }
+
+  .publications .publication-row {
+    display: block;
+    width: 100%;
+    padding: 8px 0 18px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .publications .publication-row:last-child {
+    border-bottom: 0;
+  }
+
+  .publications .publication-row > td {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 6px 4px !important;
+    overflow-wrap: anywhere;
+  }
+
+  .video-cell {
+    display: block;
+  }
+
+  .one {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+  }
+
+  .research-video,
+  .research-image {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+  }
+
+  .research-video {
+    object-fit: cover;
+  }
+
+  .research-image {
+    object-fit: contain;
+  }
+
+  .publications td,
+  .publications p,
+  .publications a,
+  .publications strong,
+  .publications papertitle {
+    font-size: 15px;
+  }
+
+  .publications papertitle {
+    line-height: 1.35;
   }
 }
