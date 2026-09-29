@@ -176,15 +176,16 @@ name {
 }
 
 .one {
-  width: 160px;
-  height: 160px;
-  min-height: 100%;
+  width: 240px;
+  max-width: 100%;
+  height: 135px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 span.highlight {
@@ -192,8 +193,10 @@ span.highlight {
 }
 
 .research-video {
-  height: 135px;
+  width: 100%;
+  height: 100%;
   display: block;
+  object-fit: cover;
 }
 
 .research-image {
@@ -354,11 +357,11 @@ span.highlight {
 
   .one {
     width: 100%;
+    max-width: 360px;
     height: auto;
-    min-height: 0;
+    aspect-ratio: 16 / 9;
   }
 
-  .research-video,
   .research-image {
     width: 100%;
     max-width: 360px;
@@ -368,6 +371,8 @@ span.highlight {
   }
 
   .research-video {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 
